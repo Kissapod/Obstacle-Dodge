@@ -6,6 +6,10 @@ public class FlyAtPlayer : MonoBehaviour
     [SerializeField] float speed = 1f;
 
     Vector3 playerPosition;
+    void Awake()
+    {
+        gameObject.SetActive(false);
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
